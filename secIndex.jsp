@@ -4,7 +4,7 @@ pageEncoding="UTF-8"%>
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Greeting Page</title>
+    <title>Hello Page</title>
   </head>
   <body>
     <h1>Greeting Page</h1>
