@@ -7,7 +7,7 @@ pageEncoding="UTF-8"%>
     <title>Hello Page</title>
   </head>
   <body>
-    <h1>Greeting Page</h1>
+    <h1>Hello Page</h1>
 
     <p>Hello <%= request.getParameter("userName") %>!</p>
   </body>
