@@ -10,5 +10,7 @@ pageEncoding="UTF-8"%>
     <h1>Hello Page</h1>
 
     <p>Hello <%= request.getParameter("userName") %>!</p>
+
+    <a href="index.jsp">Go to Back to Greeting Page</a>
   </body>
 </html>
