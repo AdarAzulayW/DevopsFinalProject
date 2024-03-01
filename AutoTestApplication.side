@@ -1,0 +1,156 @@
+{
+  "id": "6f32699d-d20d-4cca-9a0b-2ab6ccea69d3",
+  "version": "2.0",
+  "name": "AutoTestApplication",
+  "url": "http://localhost:8070",
+  "tests": [{
+    "id": "c7e7bd5f-0a30-425f-bc21-f2b525f79378",
+    "name": "TestAuto1",
+    "commands": [{
+      "id": "b3c3c993-a39c-4278-a234-79890b5db730",
+      "comment": "",
+      "command": "open",
+      "target": "/Adar-Tal-Amnon-Daniel/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d3bc009-b81f-4389-9c86-f1df8f3a98c9",
+      "comment": "Header page is found ",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Greeting Page')]", "xpath:innerText"]
+      ],
+      "value": "Greeting Page"
+    }, {
+      "id": "aa89bd00-16fc-4d7a-aefb-4fabf245afe8",
+      "comment": "",
+      "command": "click",
+      "target": "id=textInput",
+      "targets": [
+        ["id=textInput", "id"],
+        ["name=userName", "name"],
+        ["css=#textInput", "css:finder"],
+        ["xpath=//input[@id='textInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "492e63bc-6127-41c6-871b-e029f66da5bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=textInput",
+      "targets": [
+        ["id=textInput", "id"],
+        ["name=userName", "name"],
+        ["css=#textInput", "css:finder"],
+        ["xpath=//input[@id='textInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "a2c8de2a-fdac-43cc-82f3-50fd7759eb33",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=textInput",
+      "targets": [
+        ["id=textInput", "id"],
+        ["name=userName", "name"],
+        ["css=#textInput", "css:finder"],
+        ["xpath=//input[@id='textInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9dc46f8c-ec04-4324-b9b5-2f7ef5fa18cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53c55daf-a5fc-4a3f-9486-dc51dd73fabb",
+      "comment": "got the name and pass it correctly",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Hello Test!')]", "xpath:innerText"]
+      ],
+      "value": "Hello Test!"
+    }, {
+      "id": "e63fb92a-4c40-4c69-80fa-deb9130266ce",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Go to Back to Greeting Page",
+      "targets": [],
+      "value": "Go to Hello World Page"
+    }, {
+      "id": "fe4f9282-b1f9-475b-90f5-afd15cc9bcdd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go to Back to Greeting Page",
+      "targets": [
+        ["linkText=Go to Back to Greeting Page", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Go to Back to Greeting Page')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go to Back to Greeting Page')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "441839c1-1e2f-4d5f-9e25-861b3680ca5b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go to Hello World Page",
+      "targets": [
+        ["linkText=Go to Hello World Page", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Go to Hello World Page')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'helloworld.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go to Hello World Page')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "463cad00-79f7-4c62-bcff-16b99d42423c",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Hello World!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4a75d65-3a89-4ac4-9b46-c190bbeb3d1f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Hello World!')]", "xpath:innerText"]
+      ],
+      "value": "Hello World!"
+    }]
+  }],
+  "suites": [{
+    "id": "c086f1ca-b137-4b95-8fd9-bbfe28cabb8e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c7e7bd5f-0a30-425f-bc21-f2b525f79378"]
+  }],
+  "urls": ["http://localhost:8070/"],
+  "plugins": []
+}
