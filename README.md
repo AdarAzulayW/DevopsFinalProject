@@ -1,5 +1,7 @@
 # Final Project: DevOps Workflow for HIT Corporate
 
+![](devops.png)
+
 ## Overview
 
 In this final project, our team of DevOps Engineers at HIT corporate has successfully orchestrated a complete DevOps workflow to deploy a simple web application from development into production. Our mission encompassed automating deployment, monitoring, performance testing, and analysis, leveraging the comprehensive knowledge gained from our DevOps course.
